@@ -1,0 +1,106 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid #8884;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #8883;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 4px 0 0;
+}
+
+.descripcion {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.precio {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.card button.secundario {
+  background: transparent;
+  border-color: #646cff;
+  color: inherit;
+}
+
+.card button:disabled {
+  background: #2e9e5b;
+  cursor: not-allowed;
+}
+
+.resenas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.resenas li {
+  border-top: 1px solid #8884;
+  padding-top: 8px;
+}
+
+.resenas p {
+  margin: 2px 0 0;
+}
+
+.fecha {
+  opacity: 0.6;
+  font-size: 0.75rem;
+}
+
+.vacio {
+  opacity: 0.6;
+  font-style: italic;
+}
